@@ -1,0 +1,25 @@
+{
+  "name": "FigmaEX-Installer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asar": "^3.0.3",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "inquirer": "^8.0.0",
+    "semver": "^7.3.5"
+  },
+  "pkg": {
+    "scripts": "src/**/*.js",
+    "assets": "src/app.js",
+    "outputPath": "dist"
+  }
+}
